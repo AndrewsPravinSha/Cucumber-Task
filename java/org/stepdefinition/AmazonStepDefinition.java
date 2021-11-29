@@ -61,7 +61,7 @@ public class AmazonStepDefinition extends CucumberBase{
 		/*when the product is added to cart, 
 		  It shows message that will be used for validating output results*/
 		
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 4);
 		WebElement until = wait.until(ExpectedConditions.visibilityOf(ap.getCartButton()));
 	    boolean displayed = until.isDisplayed();
 	    Assert.assertTrue("Product was not Added to the Cart", displayed);
