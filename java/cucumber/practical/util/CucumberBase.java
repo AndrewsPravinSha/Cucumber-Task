@@ -67,6 +67,9 @@ public class CucumberBase {
 		element.sendKeys(value);
 
 	}
+	public static void clearText(WebElement element) {
+		element.clear();
+	}
 	public static void clickButton(WebElement element) {
 		element.click();
 
@@ -99,6 +102,7 @@ public class CucumberBase {
 		String handle = driver.getWindowHandle();
 		return handle;
 	}
+	
 	public static void jumpTowindow(int index) {
 		Set<String> windowHandles = driver.getWindowHandles();
 		List<String> list = new ArrayList<String>();
