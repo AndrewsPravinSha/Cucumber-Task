@@ -1,4 +1,4 @@
-package cucumber.practical.util;
+package aps.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -233,7 +233,7 @@ public class CucumberBase {
 	}
 	public static void readPropertyFile() {
 		try {
-			File srcPath = new File(System.getProperty("user.dir")+"\\src\\test\\java\\cucumber\\practical\\util\\config.properties");
+			File srcPath = new File(System.getProperty("user.dir")+"\\Configs\\Config.properties");
 			FileInputStream fis = new FileInputStream(srcPath);
 			prop = new Properties();
 			prop.load(fis);

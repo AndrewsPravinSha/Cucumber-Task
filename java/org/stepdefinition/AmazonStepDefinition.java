@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import cucumber.practical.pojo.AmazonPojo;
-import cucumber.practical.util.CucumberBase;
+import aps.pojo.AmazonPojo;
+import aps.utils.CucumberBase;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,12 +16,7 @@ public class AmazonStepDefinition extends CucumberBase{
 	
 	@Given("enter into amazon site")
 	public void enter_into_amazon_site() {
-	   //reading property file from the configuration file
-	   readPropertyFile();
-	   
-	   //initiating the browser from the value of config.file
-	   browserConfig(prop.getProperty("browser"));
-	   
+		readPropertyFile();
 	   //launching the Amazon url from the value of config.file
 	   launchUrl(prop.getProperty("amazonUrl"));
 	   ap = new AmazonPojo();

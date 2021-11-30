@@ -1,7 +1,8 @@
 @Amazon
 Feature: Adding products in cart in Amazon site
-Scenario Outline: adding a product in cart
+Background: launching amazon Url
 Given enter into amazon site
+Scenario Outline: adding a product in cart
 When search a "<product>" in searchBox
 And click a search button
 Then click the product 

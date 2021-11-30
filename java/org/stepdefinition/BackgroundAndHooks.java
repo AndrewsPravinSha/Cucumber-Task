@@ -5,8 +5,8 @@ import java.util.List;
 import org.hooks.Hooks;
 import org.openqa.selenium.WebElement;
 
-import cucumber.practical.pojo.TestLeafPojo;
-import cucumber.practical.util.CucumberBase;
+import aps.pojo.TestLeafPojo;
+import aps.utils.CucumberBase;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

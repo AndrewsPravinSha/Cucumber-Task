@@ -1,11 +1,11 @@
-package cucumber.practical.pojo;
+package aps.pojo;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import cucumber.practical.util.CucumberBase;
+import aps.utils.CucumberBase;
 
 public class FbPojo extends CucumberBase{
 
