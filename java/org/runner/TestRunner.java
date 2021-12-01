@@ -3,7 +3,6 @@ package org.runner;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
-import aps.utils.ExtentCreport;
 import aps.utils.JvmReport;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -18,15 +17,16 @@ tags = {"@Amazon"},
 monochrome = true,
 plugin = {"pretty","html:target\\Reports",
 		"json:target\\Reports\\result.json",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-	 })
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		"timeline:test-output-thread/"})
 public class TestRunner {
 	
-	  @AfterClass 
-	  public static void reportGeneration() {
-		ExtentCreport.generateExtentReport();  
-	  //JvmReport.generateReport(System.getProperty("user.dir")+"\\target\\Reports\\result.json"); 
-	  }	
+	/*
+	 * @AfterClass public static void reportGeneration() {
+	 * ExtentCreport.generateExtentReport();
+	 * JvmReport.generateReport(System.getProperty("user.dir")+
+	 * "\\target\\Reports\\result.json"); }
+	 */
 	  
 
 }
